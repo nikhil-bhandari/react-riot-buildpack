@@ -64,7 +64,7 @@ yarn_node_modules() {
 
   echo "Installing node modules (yarn.lock)"
   cd "$build_dir"
-  yarn install --pure-lockfile --ignore-engines 2>&1
+  yarn install --pure-lockfile --ignore-engines --production=false 2>&1
 }
 
 npm_node_modules() {
